@@ -1,5 +1,5 @@
 #!/bin/bash
-workDir=/home/will/Projects/recover-project/automation
+workDir=/Users/aliceqichaowu/Documents/GitHub/recover-project/automation
 current_date_time=$(date +%m-%d-%Y_%H:%M)
 echo $(date) >> ${workDir}/logs/runs.log
 # conda activate flywheel

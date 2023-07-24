@@ -11,7 +11,7 @@ date_str = datetime.strftime(datetime.now(), '%m-%d-%Y_%H:%M:%S')
 
 # Flywheel
 fw = flywheel.Client()
-project = fw.lookup("detre_group/RECOVER")
+project = fw.lookup("detre_group/Alice_Project")
 print(project.label)
 sessions = [s for s in project.sessions() if s.created > date]
 gear = fw.lookup('gears/fw-heudiconv/0.2.15_0.4.3')

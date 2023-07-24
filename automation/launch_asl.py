@@ -10,7 +10,7 @@ date_str = datetime.strftime(datetime.now(), '%m-%d-%Y_%H:%M:%S')
 
 # Flywheel
 fw = flywheel.Client()
-project = fw.lookup("detre_group/RECOVER")
+project = fw.lookup("detre_group/Alice_Project")
 sessions = [s for s in project.sessions() if s.created > date]
 gear = fw.lookup('gears/asllite/0.2.5_0.3.0')
 asl_context = project.get_file('aslcontext.tsv')

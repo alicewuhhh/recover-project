@@ -11,7 +11,7 @@ date_str = datetime.strftime(datetime.now(), '%m-%d-%Y_%H:%M:%S')
 
 # Flywheel
 fw = flywheel.Client()
-project = fw.lookup("detre_group/RECOVER")
+project = fw.lookup("detre_group/Alice_Project")
 sessions = [s for s in project.sessions() if s.created > date]
 gear = fw.lookup('gears/bids-fmriprep/1.2.4_20.2.6')
 license_file = project.get_file('license.txt')
@@ -58,4 +58,4 @@ for session in sessions:
                 print(f"Launching fmriprep analysis with label {label}...")
             except Exception as e:
                 print(e)
-                logger.warning(e)
+                # logger.warning(e)

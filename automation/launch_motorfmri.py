@@ -10,7 +10,7 @@ date_str = datetime.strftime(datetime.now(), '%m-%d-%Y_%H:%M:%S')
 
 # Flywheel
 fw = flywheel.Client()
-project = fw.lookup("detre_group/RECOVER")
+project = fw.lookup("detre_group/Alice_Project")
 sessions = [s for s in project.sessions() if s.created > date]
 version='0.1.10'
 gear = fw.lookup(f'gears/motorfmri/{version}')
