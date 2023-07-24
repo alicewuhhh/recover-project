@@ -23,7 +23,7 @@ if len(sessions) == 0:
 
 #sleep(900) # sleep for 15 minutes (about how long it takes for fw-heudiconv to queue and run)
 # Load in data
-config_file = "/home/will/Projects/recover-project/automation/fmriprep_config.json"
+config_file = "/Users/aliceqichaowu/Documents/GitHub/recover-project/automation/fmriprep_config.json"
 with open(config_file) as f:
     config = json.load(f)
 
