@@ -107,7 +107,6 @@ IntendedFor = {
     }
 }
 
-
 def AttachToProject():
     import pandas as pd
     motor_data = {'onset': [0, 2.5, 20, 37.5, 55, 72.5, 90.0, 107.5, 125],
